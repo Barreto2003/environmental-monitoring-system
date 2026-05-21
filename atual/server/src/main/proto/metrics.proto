@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_package = "com.mkyong.grpc";
+option java_multiple_files = true;
+option java_outer_classname = "MetricsProto";
+
+service MetricsService {
+  rpc SendMetric(Metric) returns (MetricResponse);
+}
+
+message Metric {
+  double temperatura = 1;
+  double humidade = 2;
+  int32 idSala = 3;
+  int32 idDispositivo = 4;
+  int64 timestamp = 5;
+}
+
+
+message MetricResponse {
+  string message = 1;
+}
