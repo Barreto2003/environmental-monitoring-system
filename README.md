@@ -4,15 +4,6 @@ Distributed environmental monitoring system developed in Java for the Distribute
 
 The system monitors temperature and humidity across university spaces using multiple communication protocols, including REST, gRPC and MQTT.
 
-## Features
-- Spring Boot backend server
-- REST API for device management
-- MQTT sensor data ingestion
-- gRPC data ingestion
-- PostgreSQL database persistence
-- Admin CLI client
-- Synthetic IoT sensor simulators
-
 ## Technologies
 - Java
 - Spring Boot
@@ -20,6 +11,4 @@ The system monitors temperature and humidity across university spaces using mult
 - JPA/Hibernate
 - REST API
 - gRPC
-- Protocol Buffers
 - MQTT
-- Maven
